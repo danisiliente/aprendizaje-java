@@ -37,5 +37,5 @@ public class pruebaSuma {
         System.out.println("la división es igual a: " + redivision);
         
     }
-    
+
 }

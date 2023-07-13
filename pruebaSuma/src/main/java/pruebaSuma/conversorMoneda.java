@@ -19,7 +19,7 @@ public class conversorMoneda {
         
         System.out.println("La cantidad de " + pesos + " pesos, equivale a: " + dolares + " dolares");
         System.out.println("La cantidad de " + pesos + " pesos, equivale a: " + euros + " euros");
-        
-    }
     
+    }
+
 }

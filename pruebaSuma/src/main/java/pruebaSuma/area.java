@@ -23,5 +23,5 @@ public class area {
         System.out.println("El área del triángulo es: " + area);
         
     }
-    
+     
 }
