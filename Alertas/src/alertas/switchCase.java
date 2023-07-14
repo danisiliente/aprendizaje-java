@@ -39,7 +39,7 @@ public class switchCase {
             }
         
             opcion = JOptionPane.showInputDialog("1 --- Papas $5000\n2 --- Doritos $8000\n3 --- Cheetos $3000\n4 --- Gansito $2000\n5 --- Salir");
-            
+        
         }
         
         JOptionPane.showMessageDialog(null,productos);
@@ -50,6 +50,7 @@ public class switchCase {
         }
         
         JOptionPane.showMessageDialog(null,sum);
+        
     }
     
 }
