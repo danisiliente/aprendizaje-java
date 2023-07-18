@@ -73,7 +73,7 @@ public class formulario1 extends javax.swing.JFrame {
 
         btnRegistrar.setBackground(new java.awt.Color(153, 153, 153));
         btnRegistrar.setForeground(new java.awt.Color(0, 0, 0));
-        btnRegistrar.setText("Registrar");
+        btnRegistrar.setText("Validar");
         btnRegistrar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
