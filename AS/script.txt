@@ -1,0 +1,5 @@
+CREATE TABLE usuarios (documento VARCHAR(10) PRIMARY KEY,
+                      nombre VARCHAR(20),
+                      contrasenha VARCHAR(20),
+                      telefono VARCHAR(10),
+                      correo VARCHAR(50));
