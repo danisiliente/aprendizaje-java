@@ -3,3 +3,26 @@ CREATE TABLE usuarios (documento VARCHAR(10) PRIMARY KEY,
                       contrasenha VARCHAR(20),
                       telefono VARCHAR(10),
                       correo VARCHAR(50));
+
+CREATE TABLE habitaciones (id_habitacion VARCHAR(10) PRIMARY KEY,
+                          num_habitacion VARCHAR(3),
+                          tipo_habitacion VARCHAR(20));
+
+CREATE TABLE reservas (id_reserva INT(10) PRIMARY KEY AUTO_INCREMENT,
+                       id_habitacion VARCHAR(10),
+                       documento VARCHAR(10),
+                       cant_personas VARCHAR(2),
+                       fecha_ingreso DATETIME,
+                       fecha_salida DATETIME,
+                       FOREIGN KEY(id_habitacion) REFERENCES habitaciones(id_habitacion),
+                       FOREIGN KEY(documento) REFERENCES usuarios(documento));
+
+INSERT INTO reservas(id_habitacion,documento,cant_personas,fecha_ingreso,fecha_salida) 
+VALUES('101','1234567891','1','2023/09/13-14-30-00','2023/09/14-14-30-00');
+
+INSERT INTO habitaciones VALUES
+('101','1A','Sencilla'),
+('102','2A','Doble'),
+('103','3A','Familiar'),
+('104','4A','Suite'),
+('105','5A','Presidencial');

@@ -4,26 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo2"
-    tools:context=".insertar">
-
-    <Button
-        android:id="@+id/btnRegistrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:hint="Registrarse"
-        android:textColorHint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cajaCorreo" />
+    android:background="@drawable/fondo3"
+    tools:context=".crearReserva">
 
     <EditText
-        android:id="@+id/cajaDocumento"
+        android:id="@+id/cajaIdHabitacion"
         android:layout_width="260dp"
         android:layout_height="50dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Número de habitación"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/cajaDoc"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="Documento"
@@ -32,88 +36,108 @@
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/cajaIdHabitacion" />
 
     <EditText
-        android:id="@+id/cajaNombre"
+        android:id="@+id/cajaCantPersonas"
         android:layout_width="260dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
-        android:hint="Nombre"
+        android:hint="Cantidad de personas"
         android:inputType="text"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cajaDocumento" />
+        app:layout_constraintTop_toBottomOf="@+id/cajaDoc" />
 
     <EditText
-        android:id="@+id/cajaContrasenha"
+        android:id="@+id/cajaFechaSalida"
         android:layout_width="260dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
-        android:hint="Contraseña"
-        android:inputType="text"
+        android:hint="yyyy/mm/dd-hh-mm-ss"
+        android:inputType="date"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cajaFechaIngreso" />
+
+    <EditText
+        android:id="@+id/cajaFechaIngreso"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="yyyy/mm/dd-hh-mm-ss"
+        android:inputType="date"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cajaNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/cajaCantPersonas" />
 
-    <EditText
-        android:id="@+id/cajaTelefono"
-        android:layout_width="260dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#FFFFFF"
-        android:ems="10"
-        android:hint="Teléfono"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#FFFFFF"
+    <Button
+        android:id="@+id/btnReservar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Reservar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cajaContrasenha" />
-
-    <EditText
-        android:id="@+id/cajaCorreo"
-        android:layout_width="260dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#FFFFFF"
-        android:ems="10"
-        android:hint="Correo"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cajaTelefono" />
+        app:layout_constraintTop_toBottomOf="@+id/cajaFechaSalida" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Formulario de registro"
+        android:text="La mejor decición de tu vida"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80FF0257"
+        android:text="Fecha de ingreso"
+        android:textColor="#CCFFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/cajaFechaIngreso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80FF0257"
+        android:text="Fecha de salida"
+        android:textColor="#CCFFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/cajaFechaSalida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

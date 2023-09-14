@@ -15,8 +15,14 @@
         android:theme="@style/Theme.ConexionBd"
         tools:targetApi="31">
         <activity
-            android:name=".ingresar"
+            android:name=".crearReserva"
             android:exported="false" />
+        <activity
+            android:name=".reservar"
+            android:exported="true" />
+        <activity
+            android:name=".ingresar"
+            android:exported="true" />
         <activity
             android:name=".insertar"
             android:exported="true" />
